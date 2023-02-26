@@ -1,0 +1,32 @@
+{
+	"name": "csv_reader",
+	"version": "1.0.0",
+	"description": "This is a nodejs application for reading csv and process its data",
+	"main": "server.js",
+	"scripts": {
+		"start": "npm run build && node ./build/app.js",
+		"dev": "ts-node ./src/app.ts",
+		"clean": "rimraf ./build",
+		"build": "npm run clean && tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "rimraf ./build"
+	},
+	"keywords": [
+		"CSV Reader"
+	],
+	"author": "MD ASIF JAWED",
+	"license": "ISC",
+	"dependencies": {
+		"csv-parse": "^5.3.5",
+		"inquirer": "^8.2.5"
+	},
+	"devDependencies": {
+		"@types/inquirer": "^8.2.6",
+		"@types/node": "^18.14.1",
+		"ts-node": "^10.9.1",
+		"rimraf": "^4.1.2",
+		"typescript": "^4.9.5"
+	}
+}
